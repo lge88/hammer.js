@@ -4,5 +4,9 @@
     "main": "dist/jquery.hammer.js",
     "scripts": [
       "dist/jquery.hammer.js"
-    ]
+    ],
+    "dependencies": {
+      "lge88/jquery"
+    },
+    "upstream": "git://github.com/EightMedia/hammer.js.git"
 }
