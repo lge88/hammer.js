@@ -1495,4 +1495,4 @@ else {
         });
     };
 
-})(window.jQuery || window.Zepto);
+})(window.jQuery || window.Zepto || require('jquery'));
