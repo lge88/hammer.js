@@ -1185,7 +1185,10 @@ Hammer.gestures.Drag = {
                 }
 
                 // we are dragging!
-                Hammer.detection.current.name = this.name;
+                Hammer.detection.current.name = this.name;.on('tap', function(ev) {
+      debug('your tap me!');
+      debug(ev);
+    });
 
                 // lock drag to axis?
                 var last_direction = Hammer.detection.current.lastEvent.direction;
@@ -1373,7 +1376,7 @@ Hammer.gestures.Release = {
 };
 
 // node export
-if(typeof module === 'object' && typeof module.exports === 'object'){
+if(typeof module !== 'undefined' && typeof module.exports !== 'undefined'){
     module.exports = Hammer;
 }
 // just window export
