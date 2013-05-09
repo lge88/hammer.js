@@ -1185,10 +1185,7 @@ Hammer.gestures.Drag = {
                 }
 
                 // we are dragging!
-                Hammer.detection.current.name = this.name;.on('tap', function(ev) {
-      debug('your tap me!');
-      debug(ev);
-    });
+                Hammer.detection.current.name = this.name;
 
                 // lock drag to axis?
                 var last_direction = Hammer.detection.current.lastEvent.direction;
@@ -1400,6 +1397,8 @@ else {
         return;
     }
 
+    var Hammer = module.exports;
+    
     /**
      * bind dom events
      * this overwrites addEventListener
